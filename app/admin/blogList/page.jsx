@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import BlogTable from "../../../components/AdminComponents/BlogTable";
 
-const page = () => {
+const Page = () => {
   const [blogs, setBlogs] = useState([]);
   const fetchBlogs = async () => {
     const res = await axios.get("/api/blog");
@@ -65,4 +65,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
